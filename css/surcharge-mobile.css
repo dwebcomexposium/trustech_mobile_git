@@ -957,7 +957,7 @@ h2 {
 
 .site-banner.headroom--pinned #cxpmClientAccountWidget,
 .site-banner.is-stuck #cxpmClientAccountWidget {
-    display: none !important
+    display: block
 }
 
 .site-banner.headroom--pinned #cxpmClientAccountWidget .widget-text span a,
@@ -1330,7 +1330,7 @@ h2 {
 .partner-gallery .pg-item-illust img,
 .partner-gallery.slider .pg-item-illust img {
     max-height: none;
-    width: 100%
+    width: 80%
 }
 
 .pg-pagin.slider-pagin {
@@ -1558,12 +1558,22 @@ address {
     height: 9815px
 }
 
+.catalogue .wrapper,
+.catalogue .site-wrapper {
+    padding: 0
+}
+
+.article-title {
+    margin: 0
+}
+
 [class^="btn"],
 .main-title-with-link [class^="btn-"],
 .main-title-with-link [class^="link-"],
 .btn-primary,
 .edito-item-btn a,
 .article .focus1 a,
+.lien1,
 .btn {
     padding: 1.3rem 2.8rem;
     font-size: 1.3rem;
@@ -1584,6 +1594,7 @@ address {
 .btn-primary:hover,
 .edito-item-btn a:hover,
 .article .focus1 a:hover,
+.lien1:hover,
 .btn:hover {
     background-color: #C5143A;
     border-color: #C5143A;
@@ -1594,6 +1605,7 @@ address {
 .main-title-with-link [class^="link-"],
 .edito-item-btn a,
 .article .focus1 a,
+.lien1,
 .btn-primary {
     line-height: 2rem;
     background-color: #C5143A;
@@ -1608,6 +1620,7 @@ address {
 .main-title-with-link [class^="link-"]::after,
 .edito-item-btn a::after,
 .article .focus1 a::after,
+.lien1::after,
 .btn-primary::after {
     content: '';
     display: inline-block;
@@ -1630,6 +1643,7 @@ address {
 .main-title-with-link [class^="link-"]:hover,
 .edito-item-btn a:hover,
 .article .focus1 a:hover,
+.lien1:hover,
 .btn-primary:hover {
     color: transparent
 }
@@ -1638,6 +1652,7 @@ address {
 .main-title-with-link [class^="link-"]:hover::after,
 .edito-item-btn a:hover::after,
 .article .focus1 a:hover::after,
+.lien1:hover::after,
 .btn-primary:hover::after {
     right: 50%
 }
@@ -1646,6 +1661,7 @@ address {
 .main-title-with-link [class^="link-"] .icon,
 .edito-item-btn a .icon,
 .article .focus1 a .icon,
+.lien1 .icon,
 .btn-primary .icon {
     display: none
 }
@@ -2173,19 +2189,19 @@ body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
 
 .newsletter-form .nf-main-content {
     margin: 0;
-    padding: 6.5rem 0 6.5rem;
+    padding: 4.5rem 0 2.5rem;
     background-color: #f5f5f5
 }
 
 .newsletter-form .nf-main-content .nf-title {
     color: #252525;
-    margin-bottom: 0
+    margin-bottom: 1rem
 }
 
 .newsletter-form .nf-main-content p {
     font-family: "Roboto-bold", sans-serif;
     color: #252525;
-    font-size: 2rem
+    font-size: 1.4rem
 }
 
 .newsletter-form .nf-main-content .style1 {
@@ -2198,7 +2214,7 @@ body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
 
 .newsletter-form .nf-main-content label {
     color: #575757;
-    margin-top: 4rem
+    margin-top: 6rem
 }
 
 .newsletter-form .nf-main-content label small {
@@ -2211,7 +2227,7 @@ body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
     background-color: #252525;
     font-size: 1.6rem;
     text-transform: capitalize;
-    padding: 2rem 3rem;
+    padding: 2rem 1rem;
     -webkit-box-shadow: none;
     box-shadow: none
 }
@@ -2231,12 +2247,13 @@ body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
 .newsletter-form .nf-main-content .nf-form-submit {
     margin-top: 1.5rem;
     display: inline-block;
-    vertical-align: bottom
+    vertical-align: bottom;
+    width: 26%
 }
 
 .newsletter-form .nf-main-content .nf-form-input {
     float: none;
-    width: auto;
+    width: 57%;
     display: inline-block;
     vertical-align: bottom
 }
@@ -2272,8 +2289,9 @@ body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
 }
 
 .newsletter-form .nf-main-content .optin-container .nf-form-input {
-    font-size: 1.8rem;
-    font-family: "Roboto-light", sans-serif
+    font-family: "Roboto-light", sans-serif;
+    font-size: 1.6rem;
+    width: 32rem
 }
 
 .newsletter-form .nf-main-content .optin-container input[type="checkbox"] {
@@ -2888,7 +2906,7 @@ body:not(.front) .intro-attendees+.edito {
     max-width: 90rem;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -10rem !important
+    margin-top: -3rem !important
 }
 
 body:not(.front) .intro-attendees+.edito .block-title {
@@ -2990,8 +3008,8 @@ body:not(.front) h3+h4 {
 body:not(.front) h3 .title-deco {
     width: 100%;
     color: #f5f5f5;
-    font-size: 6rem;
-    line-height: 8.6rem;
+    font-size: 5rem;
+    line-height: 7.6rem;
     text-transform: capitalize;
     position: absolute;
     left: 0;
@@ -3150,7 +3168,7 @@ body:not(.front).page-rubric.content379604 #zone2 .edito:nth-child(11) .block-ti
 body:not(.front).page-rubric.content379619 #zone2 .edito:nth-child(7) .block-title::before,
 body:not(.front).page-rubric.content379619 #zone2 .edito:nth-child(11) .block-title::before {
     display: block;
-    font-size: 8rem;
+    font-size: 5.4rem;
     font-family: "Roboto-slab-bold", sans-serif;
     margin-bottom: -2.7rem
 }
@@ -3198,8 +3216,8 @@ body:not(.front).page-rubric.content379522 #zone2 .contacts-list+.quicklinks,
 body:not(.front).page-rubric.content379604 #zone2 .contacts-list+.quicklinks,
 body:not(.front).page-rubric.content379619 #zone2 .contacts-list+.quicklinks {
     background-color: #f5f5f5;
-    margin: 0 0 10rem 0;
-    padding: 0 0 10rem 0
+    margin: 0 0 3rem 0;
+    padding: 0 0 3rem 0
 }
 
 body:not(.front).page-rubric.content379522 #zone2 .contacts-list .cl-content,
@@ -3227,11 +3245,11 @@ body:not(.front).page-rubric.content379619 #zone2 .contacts-list .cl-content .cl
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin: 0 2% 6.5rem 2%;
+    margin: 0 2% 4rem 2%;
     padding: 0;
-    min-width: 29.3%;
-    -ms-flex-preferred-size: 29.3%;
-    flex-basis: 29.3%;
+    min-width: 85%;
+    -ms-flex-preferred-size: 85%;
+    flex-basis: 85%;
     border: 0 none
 }
 
@@ -3284,7 +3302,7 @@ body:not(.front).page-rubric.content379619 #zone2 .contacts-list .cl-content .cl
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 0 2.5rem 1.5rem 7rem;
+    padding: 0 2.5rem 1.5rem 3rem;
     margin-left: -5rem
 }
 
@@ -3619,6 +3637,11 @@ body:not(.front).page-rubric .partner {
     margin-top: 0
 }
 
+.page-rubric #zone2 .edito .lien1 {
+    margin-top: 2rem;
+    margin-bottom: 2rem
+}
+
 .page-rubric #zone2 .edito .inside {
     max-width: 116rem;
     margin: 0 auto
@@ -3632,7 +3655,9 @@ body:not(.front).page-rubric .partner {
     text-transform: capitalize;
     margin-bottom: -6rem;
     position: relative;
-    z-index: 0
+    z-index: 0;
+    word-wrap: initial;
+    margin: 0 0 -6rem 0
 }
 
 .page-rubric #zone2 .edito .inside h1+p {
@@ -3724,10 +3749,10 @@ body:not(.front).page-rubric .partner {
 }
 
 .article-wrapper .article-title .inside .at-illust {
-    width: 77rem;
-    height: 42.5rem;
+    width: 100%;
+    height: auto;
     position: absolute;
-    bottom: -49rem
+    bottom: -30rem
 }
 
 .article-wrapper .article-title .inside .at-content {
@@ -3743,13 +3768,15 @@ body:not(.front).page-rubric .partner {
 }
 
 .article-wrapper .article-intro {
-    margin: 51rem auto 0 auto;
-    max-width: 76rem
+    margin: 33rem auto 0 auto;
+    max-width: 100%;
+    padding: 0 2rem
 }
 
 .article-wrapper .article-content {
-    max-width: 76rem;
-    margin: 0 auto
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem
 }
 
 .article-wrapper .article-content a {
@@ -3773,13 +3800,24 @@ body:not(.front).page-rubric .partner {
 
 .article-wrapper .article-navigation {
     max-width: 76rem;
-    margin: 0 auto 5rem
+    margin: 0 auto 3rem;
+    margin-top: 0 !important;
+    padding: 0 2rem
 }
 
 .article-wrapper .article-navigation .an-item {
     overflow: hidden;
     background-color: #1b1b1b;
-    min-height: 14rem
+    min-height: 14rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
 }
 
 .article-wrapper .article-navigation .an-item .an-item-link {
@@ -3871,7 +3909,8 @@ body:not(.front).page-rubric .partner {
     opacity: 0.45;
     -webkit-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     -o-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1)
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    max-width: none
 }
 
 .links-before-after {
@@ -4021,19 +4060,24 @@ body:not(.front).page-rubric .partner {
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1)
 }
 
+body.partner .partner-list {
+    margin-top: 0
+}
+
 body.partner .partner-list h1 {
     background-color: #0d0404;
     margin: 0;
     color: white;
-    font-size: 5.8rem;
-    line-height: 6.7rem;
+    font-size: 3.2rem;
+    line-height: 4rem;
     font-family: "Roboto-slab-bold", sans-serif;
     text-transform: uppercase;
     border: 0 none;
     padding: 0;
     position: relative;
     z-index: 1;
-    height: 45rem;
+    height: 20rem;
+    padding-top: 4rem;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4066,6 +4110,53 @@ body.partner .partner-list h1::before {
 
 body.partner .partner-list .partner-gallery {
     padding: 12rem 0
+}
+
+body.partner .partner-list .pl-main-content {
+    max-width: 90%;
+    margin: 0 auto
+}
+
+body.partner .partner-list .pl-main-content .pl-item {
+    text-align: center
+}
+
+body.partner .partner-list .pl-main-content .pl-item-title {
+    display: none
+}
+
+body.partner .partner-list .pl-main-content .pl-item-illust {
+    width: 70%;
+    padding-top: 0
+}
+
+body.partner .partner-list .pl-main-content .pl-item-read-more {
+    margin-bottom: 3rem
+}
+
+body.partner .partner-list .pl-main-content .pl-item-read-more a {
+    background-color: white;
+    border: 0 none;
+    text-transform: uppercase;
+    color: #252525;
+    font-family: "Roboto-bold", sans-serif;
+    font-weight: normal;
+    font-size: 1.4rem;
+    padding: 1rem 1.5rem;
+    -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+body.partner .partner-list .pl-main-content .pl-item-read-more a::before {
+    content: '›';
+    display: inline-block;
+    color: #C5143A;
+    font-size: 2rem;
+    margin-right: 0.4rem;
+    -webkit-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .catalogue .social-sharing {
@@ -4181,7 +4272,7 @@ body.partner .partner-list .partner-gallery {
 .catalogue .breadcrumb-nav+.edito.mod-catal .inside {
     position: relative;
     z-index: 1;
-    height: 45rem;
+    height: 17rem;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4200,8 +4291,8 @@ body.partner .partner-list .partner-gallery {
 
 .catalogue .breadcrumb-nav+.edito.mod-catal .inside h1 {
     color: white;
-    font-size: 5.8rem;
-    line-height: 6.7rem;
+    font-size: 3.2rem;
+    line-height: 4rem;
     font-family: "Roboto-slab-bold", sans-serif;
     text-transform: uppercase;
     border: 0 none;
@@ -4531,6 +4622,7 @@ html[lang="fr"] body:not(.front) #zone1 .main-navigation .mn-menu-line .mn-menu 
 
 .front .wrapper .contacts-list .cl-item .cl-item-content .cl-item-subtitle {
     font-family: "Roboto-bold", sans-serif;
+    font-weight: normal;
     color: white;
     background-color: #C5143A;
     -webkit-box-shadow: 0 1rem 2.3rem -0.9rem rgba(173, 20, 53, 0.54);
@@ -5182,7 +5274,7 @@ body.article h2 {
 }
 
 body.article h3 {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
     color: #252525;
     margin: 3rem 0
 }
@@ -5190,7 +5282,7 @@ body.article h3 {
 body.article h4 {
     font-size: 2.6rem;
     color: #252525;
-    margin: 3rem 0;
+    margin: 2.5rem 0;
     font-family: "Roboto-bold", sans-serif
 }
 
@@ -5647,7 +5739,7 @@ body.article h2 {
 }
 
 body.article h3 {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
     color: #252525;
     margin: 3rem 0
 }
@@ -5655,7 +5747,7 @@ body.article h3 {
 body.article h4 {
     font-size: 2.6rem;
     color: #252525;
-    margin: 3rem 0;
+    margin: 2.5rem 0;
     font-family: "Roboto-bold", sans-serif
 }
 
@@ -7046,14 +7138,13 @@ body.article .cl-item-phone span:nth-child(2) {
 .catalogue .esf-form-zone {
     max-width: 1080px;
     margin: 0 auto;
-    margin-bottom: 40px;
     border: 0 none;
-    padding: 37px 55px;
+    padding: 2.7rem 3.5rem 2.8rem;
     background-color: white;
     border-radius: 0;
     -webkit-box-shadow: 0 25px 40px -20px rgba(0, 0, 0, 0.2);
     box-shadow: 0 25px 40px -20px rgba(0, 0, 0, 0.2);
-    margin-bottom: 55px;
+    margin-bottom: 30px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale
 }
@@ -7170,8 +7261,8 @@ body.article .cl-item-phone span:nth-child(2) {
 .mod-catal.myselection {
     background-color: #252525;
     color: white;
-    width: 22rem;
-    padding: 0 1.5rem 0rem
+    width: 100%;
+    padding: 1rem 1.5rem
 }
 
 .mysel-footer {
@@ -7550,8 +7641,9 @@ body.article .cl-item-phone span:nth-child(2) {
 }
 
 .mod-catal .catal-ex-item-img {
-    width: 296px;
-    background-color: #f5f5f5
+    width: 100%;
+    background-color: #f5f5f5;
+    margin-bottom: 1.5rem
 }
 
 .mod-catal .catal-ex-item-title {
@@ -7834,7 +7926,7 @@ body.article .cl-item-phone span:nth-child(2) {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin-right: 27.5rem
+    margin-right: 0
 }
 
 .mod-catal .catal-ex-item-group-title .catal-ex-item-buttons {
@@ -7891,7 +7983,7 @@ body.article .cl-item-phone span:nth-child(2) {
 
 .mod-catal .catal-ex-item-content {
     width: 100%;
-    padding-left: 1.7rem
+    padding: 0
 }
 
 .mod-catal.catal-pr-details .edito .btn-primary .icon-catal {
@@ -8032,8 +8124,8 @@ body.article .cl-item-phone span:nth-child(2) {
 
 .catal-ex-details .mod-catal .catal-ex-item-buttons,
 .mod-catal .catal-ex-item-buttons-small {
-    top: 32rem;
-    position: absolute;
+    top: 0;
+    position: relative;
     width: 100%;
     z-index: 3
 }
@@ -8199,6 +8291,42 @@ body.article .cl-item-phone span:nth-child(2) {
     font-family: "Roboto-slab-bold", sans-serif;
     color: #252525;
     font-size: 3rem
+}
+
+.mysel-hist-bar {
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    margin: 0;
+    padding: 0
+}
+
+.mod-catal .block-title:not(:first-child) {
+    margin-top: 0
+}
+
+.mod-catal .esf-search-line #esf_simple_search {
+    width: 80%
+}
+
+.mod-catal .catal-ex-item {
+    padding: 15px 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.mod-catal .catal-ex-item-buttons,
+.mod-catal .catal-ex-item-buttons-small {
+    border-left: 0 none
+}
+
+.catalogue .site-banner .inside,
+.catalogue .header-navigation .inside,
+.catalogue .site-footer .inside {
+    padding: 0
 }
 
 .content372362 h1+.quicklinks {
