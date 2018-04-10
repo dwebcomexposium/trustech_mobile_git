@@ -2147,7 +2147,15 @@ body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.cta-band .wrap .txt {
+    text-align: center
 }
 
 .cta-band .wrap .txt h3 {
@@ -2165,7 +2173,8 @@ body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
     background-color: white;
     border-color: white;
     color: #252525;
-    margin-left: auto
+    margin-left: 0;
+    margin-top: 2rem
 }
 
 .cta-band .wrap .btn-primary::after {
@@ -3375,6 +3384,10 @@ body:not(.front).page-rubric .partner {
 .deco-link img {
     width: 0.5rem;
     height: 4rem
+}
+
+.page-rubric .edito {
+    margin: 0 !important
 }
 
 .page-rubric.content379634 #zone2::before {
@@ -8350,7 +8363,7 @@ body.article .cl-item-phone span:nth-child(2) {
 }
 
 .price-list {
-    padding: 9rem 0;
+    padding: 3rem 0;
     background-color: #f5f5f5
 }
 
@@ -8367,15 +8380,21 @@ body.article .cl-item-phone span:nth-child(2) {
 }
 
 .price-list .price-cards .price-card {
-    -ms-flex-preferred-size: 30%;
-    flex-basis: 30%;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
     display: block;
     background-color: white;
     opacity: .6;
     border-radius: .5rem .5rem 0 0;
     -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     -o-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1)
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-width: 90%;
+    margin: 3rem auto 0
 }
 
 .price-list .price-cards .price-card:hover {
@@ -8399,9 +8418,9 @@ body.article .cl-item-phone span:nth-child(2) {
 
 .price-list .price-cards .price-card.active:hover {
     cursor: pointer;
-    -webkit-transform: translateY(-1rem);
-    -ms-transform: translateY(-1rem);
-    transform: translateY(-1rem);
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
     -webkit-box-shadow: 0 3.7rem 3rem -2.5rem rgba(0, 0, 0, 0.15);
     box-shadow: 0 3.7rem 3rem -2.5rem rgba(0, 0, 0, 0.15)
 }
@@ -8435,6 +8454,13 @@ body.article .cl-item-phone span:nth-child(2) {
     font-family: "Roboto-bold", sans-serif;
     font-size: 5rem;
     line-height: 5rem
+}
+
+.price-list .price-cards .price-card .price-head .price-figure span {
+    font-size: 1.4rem;
+    display: block;
+    margin: -1.8rem 0 0 0;
+    font-family: "Roboto-light", sans-serif
 }
 
 .price-list .price-cards .price-card .price-head .price-date {
