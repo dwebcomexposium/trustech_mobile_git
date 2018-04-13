@@ -1,6 +1,5 @@
 @charset "utf-8";
 /* CSS Document - Surcharge css Agence*/
-
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box
@@ -8623,6 +8622,20 @@ body.exposant .breadcrumb-nav {
     flex-direction: column
 }
 
+.price-list .price-cards .price-last {
+    width: 32rem;
+    text-align: center;
+    margin: 7rem auto 0;
+    border: 1px dotted #ccc;
+    padding: 3rem 2rem;
+    max-width: 100%;
+    font-size: 1.6rem
+}
+
+.price-list .price-cards .price-last strong {
+    font-size: 2.3rem
+}
+
 .price-list .price-cards .price-card {
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
@@ -8638,7 +8651,8 @@ body.exposant .breadcrumb-nav {
     -ms-flex-direction: column;
     flex-direction: column;
     max-width: 90%;
-    margin: 3rem auto 0
+    margin: 3rem auto 0;
+    pointer-events: none
 }
 
 .price-list .price-cards .price-card:hover {
@@ -8657,7 +8671,8 @@ body.exposant .breadcrumb-nav {
 .price-list .price-cards .price-card.active {
     -webkit-box-shadow: 0 2.7rem 3rem -2.5rem rgba(0, 0, 0, 0.15);
     box-shadow: 0 2.7rem 3rem -2.5rem rgba(0, 0, 0, 0.15);
-    opacity: 1
+    opacity: 1;
+    pointer-events: all
 }
 
 .price-list .price-cards .price-card.active:hover {
