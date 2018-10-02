@@ -3988,7 +3988,7 @@ body:not(.front).page-rubric .partner {
     width: 90%;
     height: auto;
     position: absolute;
-    bottom: -55rem;
+    bottom: -25rem;
 }
 
 .article-wrapper .article-title .inside .at-content {
@@ -8892,4 +8892,7 @@ body.exposant .breadcrumb-nav {
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
+}
+#zone1 .sb-menu-trigger {
+    display: none;
 }
