@@ -4012,8 +4012,12 @@ body:not(.front).page-rubric .partner {
 
 .article-wrapper .article-content {
     max-width: 100%;
-    margin: 27.5rem auto 0 auto;
+    margin: 2rem auto 0 auto;
     padding: 0 2rem;
+}
+
+.article-wrapper .article-content.push-content {
+    margin-top: 27.5rem;
 }
 
 .article-wrapper .article-content a {
