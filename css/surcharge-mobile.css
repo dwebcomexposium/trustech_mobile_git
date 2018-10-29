@@ -8900,3 +8900,67 @@ body.exposant .breadcrumb-nav {
 #zone1 .sb-menu-trigger {
     display: none;
 }
+.mod-catal.catal-ex-details .edito .inside {
+    width: 100%;
+    float: none;
+}
+.mod-catal .catal-ed-main .catal-ed-main-stand-item {
+    padding: 0;
+}
+.catalogue.fiche .breadcrumb-nav+.catal-nav-ex+.catal-ex-details>.edito.mod-catal h1 {
+    font-size: 4rem;
+    line-height: 4.6rem;
+    padding: 15rem 2rem 3rem 2rem;
+    height:auto;
+    z-index: 0;
+}
+.catalogue.fiche .breadcrumb-nav,
+.catalogue.fiche .mod-catal.catal-ex-details .edito .pagination {
+    display:none;
+}
+.catalogue.fiche .mod-catal .catal-ed-main {
+    margin-top:0;
+    display:block;
+}
+.mod-catal.catal-nav-ex .catal-nav-ex-search-new {
+    width: auto;
+    text-align: right;
+    padding-right: 2rem;
+}
+.catalogue.fiche .mod-catal.catal-nav-ex {
+    top: 9rem;
+}
+.catalogue.fiche .pagination {
+    padding: 2rem 0 3rem;
+}
+.catalogue.fiche .mod-catal.catal-nav-ex .catal-nav-ex-more-link .icon-catal,
+.catalogue.fiche .mod-catal.catal-nav-ex .catal-nav-ex-more-link,
+.catalogue.fiche .mod-catal.catal-nav-ex .btn-primary {
+    color: white;
+}
+.mod-catal .catal-ed-group-title .catal-ed-fold-cmd .icon-catal {
+    color:#c5143a;
+}
+.mod-catal .catal-ed-group-title {
+    position: relative;
+    border: 0;
+    border-width: 1px 0;
+    padding: 0;
+    background-color: white;
+}
+.mod-catal .catal-ed-main-title {
+    font-size:2rem;
+}
+.mod-catal .catal-ed-main .catal-ed-main-infos {
+    padding: 0rem 1rem 1rem 1rem;
+}
+.mod-catal .catal-ed-main .catal-ed-main-desc {
+    padding: 1rem;
+}
+.mod-catal .catal-ed-main .catal-ed-main-desc-title {
+    padding: 0;
+}
+.mod-catal .catal-ed-main .catal-ed-main-stand {
+    margin:0;
+    padding: 2rem 2.5rem 0rem 1.5rem;
+}
