@@ -8966,8 +8966,8 @@ body.exposant .breadcrumb-nav {
 .mod-catal.catal-ex-details .edito .inside {
     float: none;
     width: 100%;
-    margin-top: 7rem;
-    padding-top: 4rem
+    margin-top: 0;
+    padding-top: 11rem
 }
 
 .catalogue .breadcrumb-nav+.catal-nav-ex+.catal-ex-details>.edito.mod-catal h1 {
@@ -9013,7 +9013,7 @@ body.exposant .breadcrumb-nav {
 }
 
 .mod-catal.catal-nav-ex .catal-nav-ex-more-link {
-    color: #252525;
+    color: white;
     text-align: left;
     padding-left: 1rem;
     padding-top: 1rem
@@ -9029,7 +9029,7 @@ body.exposant .breadcrumb-nav {
 }
 
 .catal-pr-details {
-    margin-top: 10rem
+    margin-top: 0
 }
 
 .mod-catal .catal-ed-main .catal-ed-main-desc-content {
@@ -9195,7 +9195,7 @@ body.exposant .breadcrumb-nav {
 .produit .edito.mod-catal h1 {
     position: relative;
     z-index: 1;
-    height: 45rem;
+    height: auto;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -9213,10 +9213,12 @@ body.exposant .breadcrumb-nav {
     max-width: 116rem;
     margin: 0 auto;
     color: white;
-    font-size: 5.8rem;
-    line-height: 6.7rem;
+    font-size: 3rem;
+    line-height: 3.7rem;
     font-family: "Roboto-slab-bold", sans-serif;
     text-transform: uppercase;
     border: 0 none;
-    padding: 0
+    padding: 6rem 0 2rem 0;
+    margin-bottom: 3rem;
+    pointer-events: none
 }
