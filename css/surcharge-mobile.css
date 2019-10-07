@@ -8965,7 +8965,8 @@ body.exposant .breadcrumb-nav {
 
 .mod-catal.catal-ex-details .edito .inside {
 	float: none;
-	width: 100%
+	width: 100%;
+	margin-top: 7rem
 }
 
 .catalogue .breadcrumb-nav+.catal-nav-ex+.catal-ex-details>.edito.mod-catal h1 {
@@ -8974,9 +8975,14 @@ body.exposant .breadcrumb-nav {
 	height: auto
 }
 
+body.exposant .breadcrumb-nav {
+	top: 9rem
+}
+
 .mod-catal .catal-ed-main {
 	max-width: 90%;
-	display: block
+	display: block;
+	margin-top: 2rem
 }
 
 .mod-catal.catal-nav-ex .catal-nav-ex-search-new {
@@ -8996,6 +9002,30 @@ body.exposant .breadcrumb-nav {
 	padding: 0rem 2rem 2rem 1.5rem
 }
 
+.mod-catal .catal-ed-activity .catal-ed-activity-title-domain {
+	margin-bottom: 0
+}
+
+.mod-catal.catal-nav-ex .catal-nav-ex-more-link {
+	color: #252525;
+	text-align: left;
+	padding-left: 1rem;
+	padding-top: 1rem
+}
+
+.mod-catal .catal-prd-main .catal-prd-main-media {
+	margin-bottom: 0
+}
+
+.mod-catal.catal-pr-details .edito h1 {
+	color: #252525;
+	text-align: left
+}
+
+.catal-pr-details {
+	margin-top: 10rem
+}
+
 .mod-catal .catal-ed-main .catal-ed-main-desc-content {
 	padding: 0 2rem
 }
@@ -9006,6 +9036,11 @@ body.exposant .breadcrumb-nav {
 
 .mod-catal .catal-ed-group {
 	margin: 2rem
+}
+
+.mod-catal .catal-ed-group-title {
+	background-color: transparent;
+	border-top: 0 none
 }
 
 .mod-catal .catal-ed-group-title .catal-ed-fold-cmd {
@@ -9102,7 +9137,17 @@ body.exposant .breadcrumb-nav {
 }
 
 .mod-catal .catal-prd-group-title {
-	border-top: 0 none
+	border-top: 0 none;
+	background-color: transparent
+}
+
+.mod-catal .catal-prd-group-title .btn:hover {
+	background-color: transparent;
+	border: 0 none
+}
+
+.mod-catal .catal-prd-group-title h2 {
+	color: #252525
 }
 
 .mod-catal .catal-prd-main .catal-prd-main-desc {
