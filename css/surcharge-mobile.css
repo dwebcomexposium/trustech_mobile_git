@@ -5020,6 +5020,7 @@ html[lang="fr"] body:not(.front) #zone1 .main-navigation .mn-menu-line .mn-menu 
     display: block;
     z-index: 0;
     background-color: black;
+    background-image: url("/theme/trustech_mobile_git/img/videos/video-replace.jpg");
     font-size: 0;
     margin-bottom: 4rem;
     max-height: 85vh;
@@ -5039,6 +5040,10 @@ html[lang="fr"] body:not(.front) #zone1 .main-navigation .mn-menu-line .mn-menu 
     min-height: 85vh;
     opacity: 0.6;
     max-width: none
+}
+
+.video-container .video-bg {
+    visibility: hidden;
 }
 
 .video-container .landing {
