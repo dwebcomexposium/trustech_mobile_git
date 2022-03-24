@@ -5021,6 +5021,7 @@ html[lang="fr"] body:not(.front) #zone1 .main-navigation .mn-menu-line .mn-menu 
     z-index: 0;
     background-color: black;
     background-image: url("/theme/trustech_mobile_git/img/videos/video-replace.jpg");
+    background-size: cover;
     font-size: 0;
     margin-bottom: 4rem;
     max-height: 85vh;
