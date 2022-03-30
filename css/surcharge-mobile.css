@@ -9236,5 +9236,5 @@ body.exposant .breadcrumb-nav {
 }
 
 .article-wrapper .article-content.push-content {
-    margin-top: 27rem;
+    margin-top: 27rem!important;
 }
