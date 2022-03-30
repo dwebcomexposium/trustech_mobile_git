@@ -9234,3 +9234,7 @@ body.exposant .breadcrumb-nav {
     pointer-events: none;
     margin-top: -3rem
 }
+
+.article-wrapper .article-content.push-content {
+    margin-top: 27rem;
+}
